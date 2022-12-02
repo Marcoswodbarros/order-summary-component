@@ -1,0 +1,65 @@
+@import 'abstract/variaveis';
+
+body{
+    background: $color-pale-blue;
+    box-sizing: border-box;
+    font-family: $font;
+
+    main{
+        align-items: center;
+        background: $color-very-pale-blue;
+        border-radius: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+        width: 85vw;
+
+        .img__mobile{
+            background-image: url(../images/illustration-hero.svg);
+            background-position: center;
+            background-size: cover;
+            border-radius: 1rem 1rem 0 0;
+            height: 25vh;
+            width: 85vw;
+        }
+
+        h1{
+            color: $color-dark-blue;
+            font-size: 1.5rem;
+            font-weight: 900;
+            margin: 1.2rem 0;
+        }
+
+        p{
+            color: $color-desaturated-blue;
+            line-height: 1.5rem;
+            text-align: center;
+            width: 83%;
+        }
+
+        .container__plan{
+            align-items: center;
+            background: rgb(211, 211, 211);
+            border-radius: 1rem;
+            display: flex;
+            gap: 1rem;
+            margin-top: 1.5rem;
+            padding: 1rem;
+
+            .container__plan--price{
+                display: flex;
+                flex-direction: column;
+                gap: .5rem;
+
+                h7{
+                    color: $color-dark-blue;
+                    font-weight: 900;
+                }
+
+                span{
+                    color: $color-desaturated-blue;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,55 @@
+body {
+  background: hsl(225deg, 100%, 94%);
+  box-sizing: border-box;
+  font-family: "Red Hat Display";
+}
+body main {
+  align-items: center;
+  background: hsl(225deg, 100%, 98%);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 85vw;
+}
+body main .img__mobile {
+  background-image: url(../images/illustration-hero.svg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 1rem 1rem 0 0;
+  height: 25vh;
+  width: 85vw;
+}
+body main h1 {
+  color: hsl(223deg, 47%, 23%);
+  font-size: 1.5rem;
+  font-weight: 900;
+  margin: 1.2rem 0;
+}
+body main p {
+  color: hsl(224deg, 23%, 55%);
+  line-height: 1.5rem;
+  text-align: center;
+  width: 83%;
+}
+body main .container__plan {
+  align-items: center;
+  background: rgb(211, 211, 211);
+  border-radius: 1rem;
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  padding: 1rem;
+}
+body main .container__plan .container__plan--price {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+body main .container__plan .container__plan--price h7 {
+  color: hsl(223deg, 47%, 23%);
+  font-weight: 900;
+}
+body main .container__plan .container__plan--price span {
+  color: hsl(224deg, 23%, 55%);
+}/*# sourceMappingURL=style.css.map */
