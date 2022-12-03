@@ -14,6 +14,11 @@ body{
         gap: .5rem;
         width: 85vw;
 
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+
         .img__mobile{
             background-image: url(../images/illustration-hero.svg);
             background-position: center;
@@ -39,11 +44,11 @@ body{
 
         .container__plan{
             align-items: center;
-            background: rgb(211, 211, 211);
+            background: rgb(245, 245, 245);
             border-radius: 1rem;
             display: flex;
             gap: 1rem;
-            margin-top: 1.5rem;
+            margin-top: 1rem;
             padding: 1rem;
 
             .container__plan--price{
@@ -60,6 +65,33 @@ body{
                     color: $color-desaturated-blue;
                 }
             }
+
+            a{
+                font-size: .8rem;
+                font-weight: 700;
+                margin-left: 2rem;
+            }
+        }
+
+        .button__proceed{
+            background: $color-bright-blue;
+            border-radius: .8rem;
+            border-style: none;
+            color: $color-very-pale-blue;
+            font-size: 1rem;
+            font-weight: 700;
+            margin-top: 1rem;
+            padding: 1rem 4rem;
+        }
+
+        .button__cancel{
+            background: $color-very-pale-blue;
+            border-style: none;
+            color: $color-desaturated-blue;
+            font-size: 1rem;
+            font-weight: 700;
+            margin-bottom: .5rem;
+            padding: 1rem 4rem;
         }
     }
 }
