@@ -1,0 +1,32 @@
+@import '../abstract/variaveis';
+
+.container__plan{
+    align-items: center;
+    background: rgb(245, 245, 245);
+    border-radius: 1rem;
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    padding: 1rem;
+
+    .container__plan--price{
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+
+        h7{
+            color: $color-dark-blue;
+            font-weight: 900;
+        }
+
+        span{
+            color: $color-desaturated-blue;
+        }
+    }
+
+    a{
+        font-size: .8rem;
+        font-weight: 700;
+        margin-left: 2rem;
+    }
+}    
