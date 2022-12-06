@@ -9,6 +9,14 @@
     font-weight: 700;
     margin-top: 1rem;
     padding: 1rem 4rem;
+    @media screen and (min-width: $desktop){
+        cursor: pointer;
+        padding-left: 6rem;
+        padding-right: 6rem;
+        &:hover{
+            background: $color-desaturated-blue;
+        }
+    }
 }
 
 .button__cancel{
@@ -19,4 +27,12 @@
     font-weight: 700;
     margin-bottom: .5rem;
     padding: 1rem 4rem;
+    @media screen and (min-width: $desktop){
+        cursor: pointer;
+        padding-left: 6rem;
+        padding-right: 6rem;
+        &:hover{
+            color: $color-dark-blue;
+        }
+    }
 }

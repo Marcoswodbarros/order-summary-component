@@ -1,11 +1,17 @@
 .container__plan {
   align-items: center;
-  background: rgb(245, 245, 245);
+  background: rgb(240, 245, 255);
   border-radius: 1rem;
   display: flex;
   gap: 1rem;
   margin-top: 1rem;
   padding: 1rem;
+}
+@media screen and (min-width: 1440px) {
+  .container__plan {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 }
 .container__plan .container__plan--price {
   display: flex;
@@ -24,6 +30,15 @@
   font-weight: 700;
   margin-left: 2rem;
 }
+@media screen and (min-width: 1440px) {
+  .container__plan a {
+    margin-left: 4rem;
+  }
+  .container__plan a:hover {
+    opacity: 0.8;
+    text-decoration: none;
+  }
+}
 
 .button__proceed {
   background: hsl(245deg, 75%, 52%);
@@ -35,6 +50,16 @@
   margin-top: 1rem;
   padding: 1rem 4rem;
 }
+@media screen and (min-width: 1440px) {
+  .button__proceed {
+    cursor: pointer;
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+  .button__proceed:hover {
+    background: hsl(224deg, 23%, 55%);
+  }
+}
 
 .button__cancel {
   background: hsl(225deg, 100%, 98%);
@@ -45,11 +70,50 @@
   margin-bottom: 0.5rem;
   padding: 1rem 4rem;
 }
+@media screen and (min-width: 1440px) {
+  .button__cancel {
+    cursor: pointer;
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+  .button__cancel:hover {
+    color: hsl(223deg, 47%, 23%);
+  }
+}
+
+footer p {
+  font-size: 0.8rem;
+  position: relative;
+  text-align: center;
+  top: 94vh;
+}
+@media screen and (min-width: 1440px) {
+  footer p {
+    margin-top: 0.5rem;
+    top: 88vh;
+  }
+}
+footer p a {
+  color: hsl(245deg, 75%, 52%);
+  text-decoration: none;
+}
+@media screen and (min-width: 1440px) {
+  footer p a:hover {
+    border-bottom: 1px solid hsl(245deg, 75%, 52%);
+  }
+}
 
 body {
   background: hsl(225deg, 100%, 94%);
   box-sizing: border-box;
   font-family: "Red Hat Display";
+}
+@media screen and (min-width: 1440px) {
+  body {
+    background-image: url(../images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 body main {
   align-items: center;

@@ -2,12 +2,16 @@
 
 .container__plan{
     align-items: center;
-    background: rgb(245, 245, 245);
+    background: $plan-background;
     border-radius: 1rem;
     display: flex;
     gap: 1rem;
     margin-top: 1rem;
     padding: 1rem;
+    @media screen and (min-width:$desktop){
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
 
     .container__plan--price{
         display: flex;
@@ -28,5 +32,12 @@
         font-size: .8rem;
         font-weight: 700;
         margin-left: 2rem;
+        @media screen and (min-width: $desktop){
+            margin-left: 4rem;
+            &:hover{
+                opacity: 0.8;
+                text-decoration: none;
+            }
+        }
     }
 }    

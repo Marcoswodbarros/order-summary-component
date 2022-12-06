@@ -1,9 +1,15 @@
 @import 'abstract/variaveis';
 @import 'components/plan';
 @import 'components/button';
+@import 'components/footer';
 
 body{
     background: $color-pale-blue;
+    @media screen and (min-width: $desktop){
+        background-image: url(../images/pattern-background-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
     box-sizing: border-box;
     font-family: $font;
 
@@ -15,9 +21,9 @@ body{
         flex-direction: column;
         gap: .5rem;
         width: 85vw;
-            @media screen and (min-width: 1440px){
-                width: 30vw;
-            }   
+        @media screen and (min-width: $desktop){
+            width: 30vw;
+        }   
 
         position: absolute;
         left: 50%;
@@ -26,9 +32,9 @@ body{
 
         .img__mobile{
             background-image: url(../images/illustration-hero.svg);
-                @media screen and (min-width: 1440px){
-                    width: 30vw;
-                }
+            @media screen and (min-width: $desktop){
+                width: 30vw;
+            }
             background-position: center;
             background-size: cover;
             border-radius: 1rem 1rem 0 0;
