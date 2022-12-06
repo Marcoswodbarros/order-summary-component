@@ -1,3 +1,51 @@
+.container__plan {
+  align-items: center;
+  background: rgb(245, 245, 245);
+  border-radius: 1rem;
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+.container__plan .container__plan--price {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.container__plan .container__plan--price h7 {
+  color: hsl(223deg, 47%, 23%);
+  font-weight: 900;
+}
+.container__plan .container__plan--price span {
+  color: hsl(224deg, 23%, 55%);
+}
+.container__plan a {
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-left: 2rem;
+}
+
+.button__proceed {
+  background: hsl(245deg, 75%, 52%);
+  border-radius: 0.8rem;
+  border-style: none;
+  color: hsl(225deg, 100%, 98%);
+  font-size: 1rem;
+  font-weight: 700;
+  margin-top: 1rem;
+  padding: 1rem 4rem;
+}
+
+.button__cancel {
+  background: hsl(225deg, 100%, 98%);
+  border-style: none;
+  color: hsl(224deg, 23%, 55%);
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  padding: 1rem 4rem;
+}
+
 body {
   background: hsl(225deg, 100%, 94%);
   box-sizing: border-box;
@@ -16,6 +64,11 @@ body main {
   top: 50%;
   transform: translate(-50%, -50%);
 }
+@media screen and (min-width: 1440px) {
+  body main {
+    width: 30vw;
+  }
+}
 body main .img__mobile {
   background-image: url(../images/illustration-hero.svg);
   background-position: center;
@@ -23,6 +76,11 @@ body main .img__mobile {
   border-radius: 1rem 1rem 0 0;
   height: 25vh;
   width: 85vw;
+}
+@media screen and (min-width: 1440px) {
+  body main .img__mobile {
+    width: 30vw;
+  }
 }
 body main h1 {
   color: hsl(223deg, 47%, 23%);
@@ -35,49 +93,4 @@ body main p {
   line-height: 1.5rem;
   text-align: center;
   width: 83%;
-}
-body main .container__plan {
-  align-items: center;
-  background: rgb(245, 245, 245);
-  border-radius: 1rem;
-  display: flex;
-  gap: 1rem;
-  margin-top: 1rem;
-  padding: 1rem;
-}
-body main .container__plan .container__plan--price {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-body main .container__plan .container__plan--price h7 {
-  color: hsl(223deg, 47%, 23%);
-  font-weight: 900;
-}
-body main .container__plan .container__plan--price span {
-  color: hsl(224deg, 23%, 55%);
-}
-body main .container__plan a {
-  font-size: 0.8rem;
-  font-weight: 700;
-  margin-left: 2rem;
-}
-body main .button__proceed {
-  background: hsl(245deg, 75%, 52%);
-  border-radius: 0.8rem;
-  border-style: none;
-  color: hsl(225deg, 100%, 98%);
-  font-size: 1rem;
-  font-weight: 700;
-  margin-top: 1rem;
-  padding: 1rem 4rem;
-}
-body main .button__cancel {
-  background: hsl(225deg, 100%, 98%);
-  border-style: none;
-  color: hsl(224deg, 23%, 55%);
-  font-size: 1rem;
-  font-weight: 700;
-  margin-bottom: 0.5rem;
-  padding: 1rem 4rem;
 }/*# sourceMappingURL=style.css.map */
